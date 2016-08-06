@@ -1,0 +1,91 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+
+            <h1 class="display-1">Bootstrap 4 Custom Forms</h1>
+            <p>Increase browser consistency and customization options with Bootstrap's custom forms.</p>
+            <p>Bootstrap 4 introduces custom forms. These are completely custom form elements that replace the browser defaults. The idea behind custom forms is that they allow for more customization and cross bowser consistency.</p>
+            <p>Bootstrap 4 uses CSS to hide the original form element (via opacity). It then uses CSS to build a new form control.</p>
+
+            <h2>Checkboxes & Radio Buttons</h2>
+            <h3>Checkboxs</h3>
+            <p>When using checkboxes, wrap them in a <mark>&lt;label&gt;</mark> element with the Bootstrap 4 <mark>.custom-control</mark> and <mark>.custom-checkbox</mark> classes applied.</p>
+            <p>Use <mark>.custom-control-input</mark> on the actual <mark>&lt;input&gt;</mark> element.</p>
+            <p>Also use two <mark>&lt;span&gt;</mark> elements; one with the <mark>.custom-control-indicator</mark> class applied, and the other with <mark>.custom-control-description</mark> (and place the actual label inside this element).</p>
+            <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" />
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Boots</span>
+            </label>
+
+
+            <h3>Radio Buttons</h3>
+            <p>Custom radio buttons are configured the same as checkboxes. The only difference is that you need to use <mark>.custom-radio</mark> instead of <mark>.custom-input</mark> on the <label>label</label> element.</p>
+            <label class="custom-control custom-radio">
+                <input id="radio1" name="radio" type="radio" class="custom-control-input"/>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Boots</span>
+            </label>
+            <label class="custom-control custom-radio">
+                <input id="radio2" name="radio" type="radio" class="custom-control-input" />
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Shoes</span>
+            </label>
+
+            <h3>Stacked Controls</h3>
+            <p>Custom checkboxes and radio buttons are displayed inline by default. To stack them, add a parent with class of <mark>.custom-controls-stacked</mark></p>
+            <div class="custom-controls-stacked">
+                <label class="custom-control custom-radio">
+                    <input id="radio1" name="radio" type="radio" class="custom-control-input"/>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Boots</span>
+                </label>
+                <label class="custom-control custom-radio">
+                    <input id="radio2" name="radio" type="radio" class="custom-control-input" />
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Shoes</span>
+                </label>
+            </div>
+
+            <h2>Select Controls</h2>
+            <p>To make a custom select control, add the Bootstrap 4 <mark>.custom-select</mark> class to the <mark>&lt;select&gt;</mark> tag.</p>
+            <select class="custom-select">
+                <option selected>Choose One...</option>
+                <option value="1">Boots</option>
+                <option value="2">Shoes</option>
+                <option value="3">Feet</option>
+            </select>
+
+            <h2>File Upload</h2>
+            <p>To make a custom "upload file" control, warp the <mark>&lt;input&gt;</mark> tag inside a <mark>&lt;label&gt;</mark> that has the <mark>.custom-file</mark> class applied.</p>
+            <p>Use <mark>.custom-control-input</mark> on the actual <mark>&lt;input&gt;</mark> element.</p>
+            <p>Also use a <mark>&lt;span&gt;</mark> element with the <mark>.custom-file-control</mark> class applied.</p>
+            <label class="custom-file">
+                <input type="file" id="file" class="custom-file-input" />
+                <span class="custom-file-control"></span>
+            </label>
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
