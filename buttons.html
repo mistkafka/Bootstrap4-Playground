@@ -1,0 +1,75 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap 4 Buttons</h1>
+            <p>Bootstrap 4 provides seven styles for buttons -- each serving a different semantic purpose.</p>
+            <h2>Semantic Styles</h2>
+            <p>To style a button, use Bootstrap's <mark>.btn</mark> class, followed by the desired style. For example, <mark>class="btn btn-primary"</mark> results in a primary button.</p>
+            <p>Here's the code used for all seven semantic button styles:</p>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secendary</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-link">Link</button>
+
+            <h2>Button Elements</h2>
+            <p>Bootstrap 4's button sytels are designed to be used with the <mark>&lt;button&gt;</mark> element, but they can also be applied to <mark>&lt;input&gt;</mark> and <mark>&lt;a&gt;</mark> elements.</p>
+            <p>You can also apply the button styles to a <mark>&lt;label&gt;</mark> element when working with checkboxes and radio buttons (more on that blow).</p>
+            <a class="btn btn-primary" href="#" role="button">Anchor</a>
+            <input class="btn btn-primary" type="button" value="Input" />
+            <input class="btn btn-primary" type="submit" value="Submit" />
+
+            <h2>Button Outlines</h2>
+            <p>Use Bootstrap 4's <mark>.btn-outline-*</mark> classes to apply the semantic color to the outline only.</p>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secendary</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+
+            <h2>Button Size</h2>
+            <p>You can specify the button size with Bootstrap's <mark>.btn-lg</mark> and <mark>.btn-sm</mark> classes. Place these in addition to the other button classes. Like this:</p>
+            <button type="button" class="btn btn-success btn-sm">Small</button>
+            <button type="button" class="btn btn-success">Normal</button>
+            <button type="button" class="btn btn-success btn-lg">Large</button>
+
+            <h2>Block Level Buttons</h2>
+            <p>A block level button spans the width of its parent. You can create a block level button by adding Bootstrap's <mark>.btn-block</mark> class.</p>
+            <button type="button" class="btn btn-danger btn-lg btn-block">Block Level Button</button>
+
+            <h2>Disabled Buttons</h2>
+            <p>Bootstrap provides specific styles for the <mark>disabeld</mark> state(as well as for other states, such as <mark>active</mark>).</p>
+            <p>If you need to disable a button that uses an <mark>&lt;a&gt;</mark> element, you can use Bootstrap's <mark>.disabled</mark> class.</p>
+            <a class="btn btn-primary disabled" role="button" href="#">The 'a' Element</a>
+            <button type="button" class="btn btn-primary" disabled="disabled">The 'button' Element</button>
+            <input type="button" class="btn btn-primary" value="The 'input' Element" disabled="disabled">
+
+
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
