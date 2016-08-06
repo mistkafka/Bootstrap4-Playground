@@ -1,0 +1,156 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <style>
+    </style>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap4 Typography</h1>
+            <h1><small>show how text element appear</small></h1>
+            <hr />
+
+            <h2>Lead Text</h2>
+            <p class="lead">You can make a paragraph stand out by using Bootstrap's <code>.lead</code> class, like this paragraph</p>
+            <p>This is a normal text at the normal size etc...</p>
+
+            <h2>Marked Text</h2>
+            <p>the HTML <code>&lt;mark&gt;</code> element represents text as marked or hightlighted for reference purposes. Sample <mark>marked text</mark></p>.
+
+            <h2>Abbreviations</h2>
+            <p>In HTML, the <code>&lt;abbr&gt;</code> represents an abbreviation or acronym. The <mark>title</mark> attribute can be used to provide an expansion ot the abbreviation</p>
+            <p>ex: <abbr title="Professor">Prof.</abbr></p>
+
+            <h2>Initialism</h2>
+            <p>You can add the Bootstrap <mark>.initialism</mark> class to render the abbreviation in a slightly smaller font size.</p>
+            <p>ex: Abbreviations <abbr title="Structured Query Language">SQL</abbr>, with <mark>.initialism</mark>: <abbr title="Structured Query Language" class="initialism">SQL</abbr> is used to query databases.</p>
+
+            <h2>Blockquotes</h2>
+            To apply Bootstrap's styles to the <code>&lt;blockquote&gt;</code> element, use the <mark>.blockquote</mark> class.
+            <blockquote class="blockquote">
+                <p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now.</p>
+            </blockquote>
+
+            <h3>Blockquotes -- Source</h3>
+            <p>Bootstrap renders the <code>&lt;cite&gt;</code> and <code>&lt;footer&gt;</code> elements nested inside the <code>&lt;blockquote&gt;</code> element like this:</p>
+            <blockquote class="blockquote">
+                <p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now.</p>
+                <footer>Tom Campbell in <cite>My Big Toe</cite></footer>
+            </blockquote>
+
+            <h3>Blockquotes -- Reverse</h3>
+            <p>You can use the Bootstrap <code>.blockquote-reverse</code> class to right-align the blockquote</p>
+            <blockquote class="blockquote-reverse">
+                <p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now.</p>
+                <footer>Tom Campbell in <cite>My Big Toe</cite></footer>
+            </blockquote>
+
+            <h2>Lists</h2>
+            <p>Bootstrap applies various styles and has a number of classes specifically for lists.</p>
+
+            <h3>Lists -- Unstyled</h3>
+            <p>You can use the Bootstrap <code>.list-unstyled</code> class to render lists without their default <mark>list-style</mark> and <mark>left-margin</mark></p>
+            <ul class="list-unstyled">
+                <li>Cats</li>
+                <li>Dogs</li>
+                <li>Elephants</li>
+            </ul>
+
+            <h3>Lists -- Inline</h3>
+            <p>You can use the Bootstrap <code>.list-inline</code> class to render list as <mark>display: inline-block</mark> and to apply some padding:</p>
+            <ul class="list-inline">
+                <li>Finder</li>
+                <li>Siri</li>
+                <li>Terminal</li>
+            </ul>
+
+            <h3>Lists -- Description List</h3>
+            <p>In Bootstrap, description lists are rendered like this:</p>
+            <dl>
+                <dt>Arahat</dt>
+                <dd>The "Perfected One", who has overcome The Three Poisions of Desire, Hatred and Ignorance.</dd>
+                <dt>Bodhi</dt>
+                <dd>Awakened wisdom.</dd>
+                <dt>Zen</dt>
+                <dd>Meditative absorption in which all dualistic distinctions are eliminated.</dd>
+            </dl>
+
+            <h3>Lists -- Description List with Horizontal(better, I think.)</h3>
+            <p>You can make the terms and descriptions line up horizontally by adding Bootstrap's <code>dl-horizontal</code> class. It works when viewport is wider.</p>
+            <dl class="dl-horizontal">
+                <dt class="col-sm-2">Arahat</dt>
+                <dd class="col-sm-10">The "Perfected One", who has overcome The Three Poisions of Desire, Hatred and Ignorance.</dd>
+                <dt class="col-sm-2">Bodhi</dt>
+                <dd class="col-sm-10">Awakened wisdom.</dd>
+                <dt class="col-sm-2">Zen</dt>
+                <dd class="col-sm-10">Meditative absorption in which all dualistic distinctions are eliminated.</dd>
+            </dl>
+
+            <h2>Code</h2>
+            <p>In Bootstrap, the <code>&lt;code&gt;</code>element is rendered like this:</p>
+            <p>The <code>accessKey</code> attribute can be used on any HTML5 element.</p>
+
+            <h2>Keyboard Input</h2>
+            <p>In Bootstrap, the <code>&lt;kbd&gt; element is rendered like this:</code></p>
+            <p>To save the document on a Mac, press <kbd>Command+S</kbd></p>
+
+            <h2>Preformatted Text</h2>
+            <p>In Bootstrap, the <code>&lt;pre&gt;</code> element is rendered like this</p>
+            <pre class="pre-scrollable">This text has
+been formatted using
+   the HTML pre tag. The browser should
+      display all white space
+as it was entered.
+been formatted using
+   the HTML pre tag. The browser should
+      display all white space
+as it was entered.
+been formatted using
+   the HTML pre tag. The browser should
+      display all white space
+as it was entered.
+been formatted using
+   the HTML pre tag. The browser should
+      display all white space
+as it was entered.
+been formatted using
+   the HTML pre tag. The browser should
+      display all white space
+as it was entered.
+been formatted using
+   the HTML pre tag. The browser should
+      display all white space
+as it was entered.
+            </pre>
+            <p>you can also add Bottstrap's <code>.pre-scrollable</code> class to set a <mark>max-height</mark> to 350 pixels and set a y-axis scrollbar</p>
+
+            <h2>Sample Text</h2>
+            <p>In Bootstrap, the <code>&lt;samp&gt;</code>element is rendered like this:</p>
+            <p>ex: computer says <samp>Not enough memory.</samp> I always thought I had a good memory!</p>
+
+            <h2>Variables</h2>
+            <p>In Bootstrap, the <code>&lt;var&gt;</code> element is rendered like this:</p>
+            <p><var>E</var>=<var>m</var><var>c<sup>2</sup></var></p>
+
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
