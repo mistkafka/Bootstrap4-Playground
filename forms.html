@@ -1,0 +1,212 @@
+
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap 4 Forms</h1>
+            <h1><small>Responsive and consistently forms</small></h1>
+
+            <p>Bootstrap 4 provides a default style that is applied across most form controls. It also provides classes for specific purposes.</p>
+            <p>In particular, Bootstrap applies <code>display: block</code> and <code>width: 100%</code> to most form controls. This results in the form controls being stacked vertically by default (but you can change this if required).</p>
+
+            <h2>Basic Form</h2>
+            <p>Use Bootstrpa's <code>.form-control</code> class against textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements to apply <code>width: 100%</code> by default.</p>
+            <p>Wrap labels and controls inside a <code>&lt;fieldset&gt;</code> with the Bootstrap <code>.form-group</code> class applied for optimum spacing. Alternatively, you can use a <code>&lt;div&glt;</code> or other element.</p>
+            <form action="">
+                <fieldset class="form-group">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name"/>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name"/>
+                </fieldset>
+                <input type="submit" class="btn btn-default" />
+            </form>
+
+            <h2>Inline Form</h2>
+            <p>use Bootstrap's <code>.form-inline</code> class to make the form elements render as inline-block and left-aligned. It's work only when the viewport width is at least 768 pixels wide.</p>
+            <form action="" class="form-inline">
+                <fieldset class="form-group">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name"/>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name"/>
+                </fieldset>
+                <input type="submit" class="btn btn-default" />
+            </form>
+
+            <h2>Hidden Labels</h2>
+            <p>Labels should always be provided on input fields, otherwise screenreaders will have troub. You can hide the label if required, by using Bootstrap's <code>.sr-only</code> class</p>
+
+            <p>Here, we use <code>.sr-only</code> to hide the labels. We also add a <code>placeholder</code> attribute to provide a hint to the user as to what to enter. Using the <code>placeholder</code> attribute in this manner is not recommended, as ti can cause usability issues.</p>
+            <form action="" class="form-inline">
+                <fieldset class="form-group">
+                    <label class="sr-only">First Name</label>
+                    <input placeholder="First Name" type="text" class="form-control" id="first_name" name="first_name"/>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="sr-only">Last Name</label>
+                    <input placeholder="Last Name" type="text" class="form-control" id="last_name" name="last_name"/>
+                </fieldset>
+                <input type="submit" class="btn btn-default" />
+            </form>
+
+            <h2>Horizontal Form</h2>
+            <p>You can use Bootstrap's <code>.form-horizontal</code> to align labels and form controls horizontally.</p>
+            <p>When doing this, you need to use Bootstrap's <mark>grid</mark> classes to specify how many columns each elements should span. Specifically, add a <code>.row</code> class to the <code>.form-group</code> and a <code>.col-*-*</code> class for each column.</p>
+            <p>Also, you can add Bootstrap's <code>.form-control-label</code> class to the <code>&lt;label&gt;</code> element in order to vertically center the label in relation to textual input elements.</p>
+            <form action="" class="form-horizontal"><div class="container">
+                <div class="form-group row">
+                    <label for="first_name" class="col-xs-3 form-control-label">First Name</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control" id="first_name" name="first_name"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="last_name" class="col-xs-3 form-control-label">Last Name</label>
+                    <div class="col-xs-9">
+                        <input type="text" class="form-control" id="last_name" name="last_name"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="form-group row">
+                        <div class="col-xs-offset-3 col-xs-9">
+                            <input type="submit" class="btn btn-default">
+                        </div>
+                    </div>
+                </div>
+            </div></form>
+
+            <h2>Form Control Size</h2>
+            <p>You can use Bootstrap 4's <code>.form-control-lg</code> and <code>.form-control-sm</code> to increase or decrease the size of an input control.</p>
+            <fieldset class="form-group">
+                <input type="text" placeholder="Small" class="form-control form-control-sm">
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="text" placeholder="Default Size" class="form-control">
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="text" placeholder="Large" class="form-control form-control-lg">
+            </fieldset>
+
+            <h2>Column Size</h2>
+            <p>You can use Bootstrap's <mark>grid system</mark> to constrain input controls to desired width.</p>
+                <div class="row">
+                    <div class="col-xs-5">
+                    <input type="text" placeholder="First Name" class="form-control">
+                    </div>
+                    <div class="col-xs-3">
+                    <input type="text" placeholder="Last Name" class="form-control">
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-xs-5">
+                    <input type="text" class="form-control" placeholder=".col-xs-5">
+                </div>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" placeholder=".col-xs-3">
+                </div>
+            </div>
+
+            <h2>Help Text</h2>
+            <p>Bootstrap 4 provides the <code>.text-muted</code> class that can be used to indicate help text. This can be applied to any inline HTML element (such as the <mark>&lt;p&gt;</mark>, <mark>&lt;span&gt;</mark> or <mark>&lt;small&gt;</mark> elements).</p>
+            <p>You should also use the <code>.aria-describedby</code> attribute to associate the help text with the form control. This will ensure that screen readers can announce the help text when the user focuses on the form control</p>
+            <label for="accountId">Account ID</label>
+            <input type="text" id="accountId" class="form-control" aria-describedby="helpAccountId" />
+            <span id="helpAccountId" class="text-muted">Your account ID is located at the top of your invoice.</span>
+
+            <h2>Validation Styles & Feedback Icons</h2>
+            <p>Bootstrap includes validation styles for form controls. These can be used to convey one of three validation status (success, danger, or warning) to the user.</p>
+            <p>The three classes are <code>.has-success</code>, <code>.has-warning</code> and <code>.has-danger</code>. These should be applied to the parent element, so that any <code>.control-label</code>, <code>.form-control</code> and <code>.text-muted</code> element nested within that element will inherit the validation styles.</p>
+            <p>Also, textual input controls can make use of feedback icons. To do this, add a <code>.form-control-success</code>, <code>.form-control-warning</code> or <code>.form-control-danger</code> class to the <code>.form-control</code> input field.</p>
+            <div class="form-group has-success">
+                <label class="control-label" for="username">Success</label>
+                <input type="text" class="form-control form-control-success" id="username" aria-describedby="usernameStatus">
+            </div>
+            <div class="form-group has-warning">
+                <label class="control-label" for="password">Warning</label>
+                <input type="password" class="form-control form-control-warning" id="password" aria-describedby="passwordStatus">
+            </div>
+            <div class="form-group has-danger" id="abc">
+                <label class="control-label" for="phone">Danger</label>
+                <input type="text" class="form-control form-control-danger" id="phone" aria-describedby="phoneStatus">
+            </div>
+            <p>I think it's used with JS to dymanic the status.</p>
+
+            <h2>Static Control</h2>
+            <p>You can use Bootstrap's <code>.form-control-static</code> on a <code>&lt;p&gt;</code> element to present plain text next to a label(eg. instead of using an input field).</p>
+            <form class="form-horization">
+                <div class="form-group">
+                    <label class="col-xs-3 form-control-label">User Name</label>
+                    <div class="col-xs-8">
+                        <p class="form-control-static">Bugsy</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label col-xs-3" for="pwd">Password</label>
+                    <div class="col-xs-8">
+                        <input type="password" class="form-control" id="pwd" placeholder="Password" />
+                    </div>
+                </div>
+            </form>
+
+            <h2>Disabled</h2>
+            <p>Bootstrap4 4 provides classes for diabled and inline checkboxs and radio buttons. To make use of these classes, nest the checkbox or radio inside a <code>&lt;div&gt;</code> with either the <mark>.radio</mark>, <mark>.radio-inline</mark>, <mark>.checkbox</mark> or <mark>checkbox-inline</mark> class as required.</p>
+
+            <h3>Disabled</h3>
+            <p>Whenerver you use the standard html <mark>disabled</mark> attribute to disable a checkbox or radio button, you also have the option of adding Bootstrap's <mark>.disabled</mark> class so that the "Not Allow" cursor appears whenever the user hovers over that control.</p>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Enabled</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="" disabled>Disabled</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="exampleRadios" id="exampleRadios1" value="radio1">Enabled.</label>
+            </div>
+            <div>
+                <label><input type="radio" name="exampleRadios" id="exampleRadios2" value="radio2" disabled>Disabled.</label>
+            </div>
+
+            <h3>Inline</h3>
+            <p>With Bootstrap4, checkboxes and radio buttons are stacked by default(they appear above one another).</p>
+            <p>You can display them inline by using the <mark>.radio-inline</mark> or <mark>.checkbox-inline</mark> class(depending on which element you're displaying).</p>
+            <div class="checkbox checkbox-inline">
+            <label>
+                <input type="checkbox" id="inlineCheckbox1" value="option1"/> 1
+            </label>
+            </div>
+            <div class="checkbox checkbox-inline">
+            <label>
+                <input type="checkbox" id="inlineCheckbox2" value="option2"/> 2
+            </label>
+            </div>
+            <p>No useful</p>
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
