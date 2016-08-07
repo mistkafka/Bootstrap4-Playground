@@ -1,0 +1,125 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap 4 Input Groups</h1>
+            <p class="lead">Group form controls and text together on a single line.</p>
+            <p>Input groups enable you to combine form controls and text on the same line. They are similar to <mark>button group</mark> in the sense that, they allow you to align the elements flush against each other.</p>
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Amount (rounded to the nearet)">
+                <span class="input-group-addon">.00</span>
+            </div>
+
+            <h2>Text on Both Sides</h2>
+            <p>You can also place text on both sides of the control.</p>
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (rounded to the nearet)"/>
+                <span class="input-group-addon">.00</span>
+            </div>
+
+            <h2>Size</h2>
+            <p>Use either <mark>.input-group-sm</mark> or <mark>.input-group-lg</mark> on the input group to specify the size of all elements. No need to specify these on each element in the group.</p>
+            <div class="input-group input-group-sm">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (rounded to the nearet)"/>
+                <span class="input-group-addon">.00</span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (rounded to the nearet)"/>
+                <span class="input-group-addon">.00</span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (rounded to the nearet)"/>
+                <span class="input-group-addon">.00</span>
+            </div>
+
+            <h2>Checkboxes & Radio Buttons</h2>
+            <p>You can place checkboxes and radio buttons instead of text.</p>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <input type="checkbox" />
+                </span>
+                <input type="text" class="form-control" />
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <input type="radio" />
+                </span>
+                <input type="text" class="form-control"/>
+            </div>
+
+            <h2>Button Addons</h2>
+            <p>You can also add buttons to the form control instead of text.</p>
+            <p>This requires another <mark>&lt;span&gt;</mark> element nested inside the input group with a class of <mark>.input-group-btn</mark></p>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search!</button>
+                </span>
+            </div>
+            <div class="input-group">
+                <input type="search" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true">
+                    </span> Search!</button>
+                </span>
+            </div>
+
+            <h2>Dropdowns</h2>
+            <p>You can add <mark>dropdown menus</mark> to the input group.</p>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Action1</a>
+                        <a class="dropdown-item" href="#">Action2</a>
+                        <a class="dropdown-item" href="#">Action3</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Split Dropdowns</h2>
+            <p>You can also add split dropdowns to the input group.</p>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-success">Action</button>
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Action1</a>
+                        <a class="dropdown-item" href="#">Action2</a>
+                        <div class="dropdown-divider" role="separator"></div>
+                        <a class="dropdown-item" href="#">Action3</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
