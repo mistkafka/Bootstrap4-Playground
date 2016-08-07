@@ -1,0 +1,197 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap 4 Navs</h1>
+            <p class="lead">Add navigation tabs and pills easily with Bootstrap's <mark>.nav</mark> class</p>
+            <p>Bootstrap's <mark>.nav</mark> class(and associated class) lets you turn a list into tabs and navigation "pills".</p>
+            <p>to add tab or new pill, add the <mark>.nav</mark> class and either <mark>.nav-pills</mark> or <mark>.nav-tabs</mark> to a <mark>&lt;ul&gt;</mark> element containing the list of navigation items.</p>
+            <p>However, using a <mark>&lt;ul&gt;</mark> is not a requirement -- you can just as easily use navs on their own.</p>
+
+            <h2>Base Nav</h2>
+            <p>Bootstrap 4 provides a base style that you can use with nav itme. You can either add further Bootstrap styles to this base or customize it according to you own needs.</p>
+            <p>The base nav component uses the <mark>.nav</mark> class on the outer navigation element such as <mark>&lt;ul&gt;</mark> or <mark>&lt;nav&gt;</mark> element</p>
+            <h3>On &lt;ul&gt; Elements</h3>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link active" href="#">HTML</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bootstrap</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ES6</a></li>
+            </ul>
+            <h3>On &lt;nav&gt; Elements</h3>
+            <nav class="nav">
+                <a class="nav-link active" href="#">HTML</a>
+                <a class="nav-link" href="#">CSS</a>
+                <a class="nav-link" href="#">JavaScript</a>
+            </nav>
+
+            <h2>Inline Navs</h2>
+            <p>Add <mark>.nav-inline</mark> to display the nav inline, with speacing added.</p>
+            <h3>On &lt;ul&gt; Elements</h3>
+            <ul class="nav nav-inline">
+                <li class="nav-item"><a class="nav-link active" href="#">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+            </ul>
+            <h3>On &lt;nav&gt; Elements</h3>
+            <nav class="nav nav-inline">
+                <a class="nav-link active" href="#">HTML</a>
+                <a class="nav-link" href="#">CSS</a>
+                <a class="nav-link" href="#">JavaScript</a>
+            </nav>
+
+            <h2>Tabs</h2>
+            <p>Add <code>class="nav nav-tabs"</code> to the <mark>&lt;ul&gt;</mark> element containing the list of navigation items.</p>
+            <p>Also use <code>class="active"</code> to make a tab the selected tab.</p>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" href="#">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+            </ul>
+
+            <h2>Pills</h2>
+            <p>Change <mark>nav-tabs</mark> to <mark>nav-pills</mark> to display pills insted.</p>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link active" href="#">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+            </ul>
+
+            <h2>Vertical Pills</h2>
+            <p>You can stack pills vertically by adding <mark>.nav-stacked</mark> to the class list.</p>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-item"><a class="nav-link active" href="#">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+            </ul>
+
+            <h2>Disabled Links</h2>
+            <p>You can add Bootstarp's <mark>.disabled</mark> class to make a tab pill appear to be disabled.(It just look like disabled, we need some JS to really support disabled.)</p>
+            <ul class="nav nav-inline">
+                <li class="nav-item"><a class="nav-link active" href="#">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="#">HTML</a></li>
+            </ul>
+
+            <h2>Tabs with Dropdown Menus</h2>
+            <p>You can add a <mark>dropdown menu</mark> to a tab or pill. In this case, the <mark>.dropdown</mark> class is applied to a <mark>&lt;li&gt;</mark> element (not a <mark>&lt;div&gt;</mark> element).</p>
+            <h3>Tabs</h3>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">HTML</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CSS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JavaScript</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Preview
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Preview">
+                        <a class="dropdown-item" href="#">Mobile Phone</a>
+                        <a class="dropdown-item" href="#">Tablet</a>
+                        <a class="dropdown-item" href="#">Laptop</a>
+                        <a class="dropdown-item" href="#">Desktop</a>
+                    </div>
+                </li>
+
+            </ul>
+            <h3>Pills</h3>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">HTML</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CSS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">JavaScript</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Preview
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Preview">
+                        <a class="dropdown-item" href="#">Mobile Phone</a>
+                        <a class="dropdown-item" href="#">Tablet</a>
+                        <a class="dropdown-item" href="#">Laptop</a>
+                        <a class="dropdown-item" href="#">Desktop</a>
+                    </div>
+                </li>
+
+            </ul>
+
+            <h2>Tabbable Panes</h2>
+            <p>You can even use Bootstrap to create tabbable panels of content.</p>
+            <p>to do this, ensure each <mark>&lt;a&gt;</mark> in the navigation has <mark>data-toggle="tab"</mark> or <mark>data-toggle="pill"</mark>(depending on whether you're using tabs or pills). Then, beneath the tab list, add a <mark>&ltdiv&gt;</mark> with the <mark>.tab-pane</mark> class.</p>
+            <p>Also, you can make tabs fade by adding the <mark>.fade</mark> class to each <mark>.tab-pane</mark>. The first tab pane (or the active tab pane) must also have the <mark>.n</mark> class to properly fade in initial content.</p>
+            <ul id="clothing-nav" calss="nav nav-tabs" role="tablist">
+                <li calss="nav-item">
+                    <a class="nav-link active" href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria0expanded="true">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hats" role="tab" id="hats-tab" data-toggle="tab" aria-controls="hats">Hats</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="buton" aria-haspopup="true" aria-expanded="false">Footwear</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#dropdown-shoes" role="tab" id="dropdown-shoes-tab" data-toggle="tab" aria-controls="dropdownShoes">Shoes</a>
+                        <a class="dropdown-item" href="#dropdown-boots" role="tab" id="dropdown-boots-tab" data-toggle="tab" aria-controls="dropdownBoots">Boots</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Content Panel -->
+            <div id="clothing-nav-content" class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labbledby="home-tab">
+                    <p>Welcome home! Click on the tabs to see the content change.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="hats" aria-labelledby="hats-tab">
+                    <p>A hat is a head covering. It can be worn for protection against the elements, ceremonial reasons, religious reasons, safety, or as a fashion accessory.</p>
+                </div>
+
+                <div role="tabpanel" class="tab-pane fade" id="dropdown-shoes" aria-labelledby="dropdown-shoes-tab">
+                    <p>A shoe is an item of footwear intended to protect and comfort the human foot while doing various activities. Shoes are also used as an item of decoration.</p>
+                </div>
+
+                <div role="tabpanel" class="tab-pane fade" id="dropdown-boots" aria-labelledby="dropdown-boots-tab">
+                    <p>A boot is a type of footwear and a specific type of shoe. Most boots mainly cover the foot and the ankle, while some also cover some part of the lower calf. Some boots extend up the leg, sometimes as far as the knee or even the hip.</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
