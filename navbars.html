@@ -1,0 +1,292 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap 4 Navbars</h1>
+            <p class="lead">Add a fully-functional, responsive navbar to your website with minimal code.</p>
+            <p>The Bootstrap 4 navbar is a simple wrapper for positioning branding, navigation, and other elements into a navigation header.</p>
+            <p>You can also configure navbars to collapse in smaller viewport and become horizontal in large viewports.</p>
+
+            <h2>Basic Navbar</h2>
+            <nav class="navbar navbar-light bg-faded">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>Here's an explanation:</p>
+            <ul>
+                <li>Wrap everthing inside a <mark>&lt;nav&gt;</mark>element with the <mark>.navbar</mark>class, along with a color scheme. For example, <mark>class="navbar navbar-light bg-faded".</mark></li>
+                <li>For the list of liks, use a <mark>&lt;ul&gt;</mark>with <mark>class="nav navbar-nav"</mark>.</li>
+                <li>For each individual list item, use <mark>&lt;li&gt;</mark> with <mark>class="nav-item"</mark>.</li>
+                <li>For the individual links use <mark>&lt;a&gt;</mark>with <mark>class="nav-link"</mark>.</li>
+            </ul>
+
+
+            <h2>Navbars with Dropdowns</h2>
+            <p>You can add <mark>dropdown menus</mark> to your navbar. Just add the dropdown code to a <mark>&lt;li&gt;</mark> element with the <mark>.dropdown</mark> class applied.</p>
+            <nav class="navbar navbar-light bg-faded">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="ture" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Dropdown Link 1</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 2</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <h2>Current Page</h2>
+            <p>use the <mark>.active</mark> class to mark a link as the current page or section (apply it to the <mark>&lt;li&gt;</mark>).</p>
+            <p>Also add a <mark>&lt;span&gt;</mark> with <mark>.sr-only</mark> to communicate this to screen readers.</p>
+            <nav class="navbar navbar-light bg-faded">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Link 2<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h2>Navbar with Form Controls</h2>
+            <p>You can include form controls by using <mark>.navbar-form</mark> and <mark>.form-inline</mark>on the <mark>&lt;form&gt;</mark> element. Here we also use <mark>.pull-right</mark>to align the form to the right.</p>
+            <p>View this example in a <mark>new window</mark>to see how it looks on a wider viewport.</p>
+            <nav class="navbar navbar-light bg-faded">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                </ul>
+
+                <!-- Search -->
+                <form class="form-inline navbar-form pull-right" role="search">
+                    <input type="text" class="form-control">
+                    <button type="submit" class="btn btn-secondary">Search</button>
+                </form>
+            </nav>
+
+            <h2>Alignment</h2>
+            <p>You can use any of the <mark>.pull-*-left</mark> or <mark>.pull-*-right</mark> classes to align components within the navbar.</p>
+            <nav calss="navbar navbar-light bg-faded">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="nav navbar-nav pull-xs-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h2>Colors</h2>
+            <p>Bootstrap provides various options for adding color to navbars. The way it works is, you specify light or dark (via <mark>.navbar-light</mark> or <mark>.navbar-dark</mark>), then specify a color. Color can be specified either via one of Bootstrap's color classes (eg, <mark>.bg-primary</mark>), or by specifying your own color with CSS(eg, using <mark>background-color</mark>).</p>
+            <p>The previous example already specify the navbar color. Here are some more examples.</p>
+            <h3>Inverted</h3>
+            <nav class="navbar navbar-dark bg-inverse">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3>Primary Color</h3>
+            <p>Here, we use <mark>.bg-primary</mark> to set the navbar color. Everything else remains the same.</p>
+            <nav class="navbar navbar-dark bg-primary">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3>Custom Color</h3>
+            <p>To sepcify your own custom color, omit any <mark>.bg-*</mark> class (eg, remove <mark>.bg-primary</mark>) and add your won color using CSS.</p>
+            <p>In this case we used HMTL's <mark>&lt;style&gt;</mark> tag to add the styles, but it's recommended that you place it in your <mark>external style sheet</mark>.</p>
+            <style scoped>
+             nav#custom-color {
+                 background-color: limegreen;
+             }
+            </style>
+            <nav id="custom-color" class="navbar navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h2>Fixed Navars</h2>
+            <p>You can fix a navbar to the top or bottom of the viewport by using either <mark>.navbar-fixed-to</mark> or <mark>.navbar-fiexed-bottom</mark>.</p>
+
+            <h3>Fixed Top</h3>
+            <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Links -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <style scoped>
+             body {
+                 height: 2000px;
+                 background-color: lightred;
+             }
+            </style>
+
+            <h2>Collapsible Content</h2>
+            <p>You can make your navbar by adding <mark>.navbar-toggler</mark> and <mark>data-toggle="collapse"</mark> to the navbar, as well as the <mark>data-target</mark> attribute with a value of the ID of the content to collpase.</p>
+            <p>On the content container, add the <mark>.collapse</mark> class, and be sure to give it an ID.</p>
+            <nav class="navbar navbar-light bg-primary">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bird">-</button>
+            </nav>
+
+            <!-- Contenth -->
+            <div class="collapse" id="bird">
+                <div class="bg-faded p-a-1">
+                    <h4>Bird</h4>
+                    <img src="/dist/img/img.jpg" class="img-circle" />
+                    <p>This bird was phototgraphed in the Philippines.</p>
+                </div>
+            </div>
+
+            <h2>Responsive Navbars</h2>
+            <p>You use the <mark>.navbar-toggler</mark> class along with Bootstrap's <mark>.navbar-toggleable-*</mark> classes to create a responsive navbar collapses at a given viewport width.</p>
+            <p>For example, you could use <mark>.navbar-toggleable-sm</mark> to turn the navbar into a toggleable navbar on small viewports</p>
+            <nav class="navbar navbar-light bg-faded">
+
+                <!-- Toggle Button -->
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#nav-content">
+                    ☰
+                </button>
+
+                <!-- Nav Content -->
+                <div class="collapse navbar-toggleable-xs" id="nav-content">
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
