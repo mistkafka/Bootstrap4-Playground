@@ -1,0 +1,45 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap 4 Breadcrumbs</h1>
+            <p class="lead">add breadcrumbs by adding a single class name.</p>
+            <p>Bootstrap provides the <mark>.breadcrumb</mark> class which styles a list into a breadcrumb.</p>
+            <p>Bootstrap adds separators (by using <mark>:before</mark> and <mark>content</mark>) to the list as well as <mark>display: inline-blcok</mark> to the <mark>&lt;li&gt;</mark> element -- resutling in that "breadcurmb" effect.</p>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Fruit</a></li>
+                <li class="breadcrumb-item active">Pears</li>
+            </ul>
+
+            <h2>Creating a Breadcrumb</h2>
+            <p>to create a breadcrumb</p>
+            <ul>
+                <li>Add <mark>class="breadcrumb"</mark>to the <mark>&lt;ul&gt;</mark> element that represents the breadcrumb.</li>
+                <li>Add the <mark>class=breadcrumb-item</mark>to the <mark>&lt;li&gt;</mark> element within the breadcrumb.</li>
+                <li>Also add <mark>class="active"</mark>to the <mark>&lt;li&gt;</mark>that represents the current page/secton(the page that the user is currently on) -- which whould almost always be the last crumb in the breadcrumb.</li>
+            </ul>
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
