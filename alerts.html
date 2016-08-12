@@ -1,0 +1,64 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap 4 Alerts</h1>
+            <p class="lead">Display pre-styled alerts and messages for common user actions.</p>
+            <p>Bootstrap provides an easy wat to create a stylized alert message box with its alert component.</p>
+            <p>To create an alert box, use the <mark>.alert</mark> class along with one of the <mark>.alert-*</mark> classes to specify the kind of alert.</p>
+            <div class="alert alert-success" role="alert">Success Alert</div>
+            <div class="alert alert-info" role="alert">Info Alert</div>
+            <div class="alert alert-warning" role="alert">Warning Alert</div>
+            <div class="alert alert-danger" role="alert">Danger Alert</div>
+
+            <h2>Dismissible Alerts</h2>
+            <p>You can create dismissible alerts by adding Bootstrap's <mark>.alert-dismissible</mark> class, along with a Close button. When the user click the Close button, the alert disappers.</p>
+            <p>Here we use <mark>&amp;times;</mark> to create the Close icon(x).</p>
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-lable="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>Congratulations!</strong> You successfully tied your shoelace!
+            </div>
+
+            <h2>Fading Effect</h2>
+            <p>You can give the alert a slight fading effect when closing them by adding the <mark>.fade</mark> and <mark>.in</mark> classes.</p>
+            <div class="alert alert-success alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <strong>Congratulations!</strong> You successfully tied your shoelace!
+            </div>
+
+            <h2>Alerts with Links</h2>
+            <p>use Bootstrap's <mark>.alert-link</mark> class on the <mark>&lt;a&gt;</mark> tag to match link color with the text.</p>
+            <div class="alert alert-success alert-dismissible fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aira-hidden="true">&times;</span>
+                </button>
+                <strong>Congratulations!</strong> Now you're ready to do the <a href="#" class="alert-link">Next Shoelace</a>.
+            </div>
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
