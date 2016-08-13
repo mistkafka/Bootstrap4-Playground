@@ -1,0 +1,150 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example Template</title>
+        <meta charset="utf-8">
+        <!-- Viewport Meta Tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/dist/css/bootstrap.min.css" type="text/css" />
+    </head>
+    <body>
+        <!-- YOUR CONTENT GOES HERE -->
+        <div class="container">
+            <h1 class="display-1">Bootstrap 4 List Groups</h1>
+            <p class="lead">Display complex lists with custom content all with a distict style and function.</p>
+            <p>In Bootstrap, list groups is a component that styles unordered lists in a particulaer way. This paves the way for creating more complex lists with custom content, without getting bogged down with presentation issues.</p>
+
+            <h2>Create a Default List Group</h2>
+            <p>To create a default list group, apply the <mark>.list-group</mark> class to the <mark>&lt;ul&gt;</mark> tag, and the <mark>.list-group-item</mark> to each <mark>&lt;li&gt;</mark> tag.</p>
+            <ul class="list-group">
+                <li class="list-group-item">Link</li>
+                <li class="list-group-item">Link</li>
+                <li class="list-group-item">Link</li>
+                <li class="list-group-item">Link</li>
+                <li class="list-group-item">Link</li>
+                <li class="list-group-item">Link</li>
+                <li class="list-group-item">Link</li>
+                <li class="list-group-item">Link</li>
+            </ul>
+
+            <h2>Tags</h2>
+            <p>you can add <mark>tags</mark> to list groups.</p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="tag tag-default tag-pill pull-xs-right">15</span>
+                    These Boots Are Made For Walking
+                </li>
+                <li class="list-group-item">
+                    <span class="tag tag-default tag-pill pull-xs-right">15</span>
+                    These Boots Are Made For Walking
+                </li>
+                <li class="list-group-item">
+                    <span class="tag tag-default tag-pill pull-xs-right">15</span>
+                    These Boots Are Made For Walking
+                </li>
+                <li class="list-group-item">
+                    <span class="tag tag-default tag-pill pull-xs-right">15</span>
+                    These Boots Are Made For Walking
+                </li>
+                <li class="list-group-item">
+                    <span class="tag tag-default tag-pill pull-xs-right">15</span>
+                    These Boots Are Made For Walking
+                </li>
+                <li class="list-group-item">
+                    <span class="tag tag-default tag-pill pull-xs-right">15</span>
+                    These Boots Are Made For Walking
+                </li>
+                <li class="list-group-item">
+                    <span class="tag tag-default tag-pill pull-xs-right">15</span>
+                    These Boots Are Made For Walking
+                </li>
+                <li class="list-group-item">
+                    <span class="tag tag-default tag-pill pull-xs-right">15</span>
+                    These Boots Are Made For Walking
+                </li>
+            </ul>
+
+            <h2>Linked List Groups</h2>
+            <p>you can use Bootstrap 4's <mark>.list-group-item-action</mark> to for linked list items. Linked list items result in the whole item being</p>
+            <ul class="list-group">
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action active" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+            </ul>
+
+            <h2>Buttons</h2>
+            <p>You can also use buttons instead of links. Just use <mark>&lt;button&gt;</mark> tags for the <mark>.list-group-item/.list-group-item-action</mark> class.</p>
+            <div class="list-group">
+                <button class="list-group-item list-group-item-action" href="#">Buttons </button>
+                <button class="list-group-item list-group-item-action" href="#">Button</button>
+                <button class="list-group-item list-group-item-action active" href="#">Button</button>
+                <button class="list-group-item list-group-item-action" href="#">Button</button>
+                <button class="list-group-item list-group-item-action" href="#">Button</button>
+                <button class="list-group-item list-group-item-action" href="#">Button</button>
+                <button class="list-group-item list-group-item-action" href="#">Button</button>
+                <button class="list-group-item list-group-item-action" href="#">Button</button>
+            </div>
+
+            <h2>Disabled Items</h2>
+            <p>You can also apply Bootstrap's <mark>.disabled</mark> class to a <mark>.list-group-item</mark> to make it appear diabled.</p>
+            <ul class="list-group">
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action disabled" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+            </ul>
+
+            <h2>Contextual Classes</h2>
+            <p>you can also apply Bootstrap's contextual classes to list group items. To do this, add one of the <mark>.list-group-item-*</mark> classes to the list group item.</p>
+            <p>When an item is <mark>.active</mark> its contextual class appears in a darkened version.</p>
+            <ul class="list-group">
+                <a class="list-group-item list-group-item-action list-group-item-success" href="#">Link</a>
+                <a class="list-group-item list-group-item-action list-group-item-info" href="#">Link</a>
+                <a class="list-group-item list-group-item-action list-group-item-warning disabled" href="#">Link</a>
+                <a class="list-group-item list-group-item-action list-group-item-danger" href="#">Link</a>
+                <a class="list-group-item list-group-item-action list-group-item-success active" href="#">Link</a>
+            </ul>
+
+            <h2>Custom Content</h2>
+            <p>List groups can contain other HTML elements too. And you can make it all clickable if it's nested inside a <mark>&lt;a&gt;</mark> element.</p>
+            <p>Bootstrap 4 has the <mark>.list-group-item-heading</mark> class for headdings and the <mark>.list-group-item-text</mark> class for text.</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                    <h4 class="list-group-item-heading">These Boots Are Made For Walking</h4>
+                    <p class="list-group-item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                    <h4 class="list-group-item-heading">These Boots Are Made For Walking</h4>
+                    <p class="list-group-item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                    <h4 class="list-group-item-heading">These Boots Are Made For Walking</h4>
+                    <p class="list-group-item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                </a>
+            </div>
+
+
+        </div>
+
+        <!-- JavaScript: placed at the end of the document so the pages load faster -->
+        <!-- jQuery library -->
+        <script src="/dist/js/jquery.js" type="text/javascript"></script>
+
+        <!-- Tether -->
+        <script src="/dist/js/tether.js" type="text/javascript"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="/dist/js/bootstrap.js" type="text/javascript"></script>
+    </body>
+</html>
